@@ -1,0 +1,769 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    transition-timing-function: ease-in;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s;
+}
+
+#divError {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-timing-function: ease-in-out;
+    transition: 0.25s;
+}
+
+.inactive {
+	filter: grayscale(1);
+}
+
+.blur {
+	filter: blur(15px);
+}
+
+.btn, .btn svg {
+	cursor: pointer;
+}
+
+h1 {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #666666;
+    font-family: Arial;
+    font-size: 28px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+h2 {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: #666666;
+    font-family: Arial;
+    font-size: 34px;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h3 {
+    height: auto;
+    width: auto;
+    color: #666666;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+    margin: auto;
+    display: inline-block;
+}
+
+
+.sectionDivider {
+    display: flex;
+    align-items: center;
+    height: 0px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.mediaViewInfo {
+	--web-view-name: polar;
+	--web-view-id: polar;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-enable-scale-up: true;
+	--web-scale-on-resize: true;
+	--web-navigate-on-keypress: true;
+	--web-refresh-for-changes: true;
+	--web-application: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: polar;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+.polar_Class {
+	position: absolute;
+	width: 1080px;
+	height: 1920px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: polar;
+	--web-view-id: polar;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-enable-scale-up: true;
+	--web-scale-on-resize: true;
+	--web-navigate-on-keypress: true;
+	--web-refresh-for-changes: true;
+	--web-application: true;
+	--web-enable-deep-linking: true;
+}
+.Rectangle_8_Class {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_8 {
+	position: absolute;
+	overflow: visible;
+	width: 1080px;
+	height: 89px;
+	left: 0px;
+	top: 0px;
+}
+.Rectangle_1_Class {
+	fill: rgba(248,248,248,1);
+}
+.Rectangle_1 {
+	position: absolute;
+	overflow: visible;
+	width: 1080px;
+	height: 1831px;
+	left: 0px;
+	top: 89px;
+}
+.Rectangle_2_Class {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_2 {
+	position: absolute;
+	overflow: visible;
+	width: 983px;
+	height: 1515.222px;
+	left: 49px;
+	top: 143px;
+}
+.Image_1_Class {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	left: 49px;
+	top: 6px;
+	overflow: visible;
+}
+.AM3_polar_alignament_Class {
+	left: 138.997px;
+	top: 26px;
+	position: absolute;
+	overflow: visible;
+	width: 324px;
+	height: 37px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(112,112,112,1);
+}
+.btt_motor_Class {
+	position: absolute;
+	width: 368px;
+	height: 60px;
+	left: 659px;
+	top: 11px;
+	overflow: visible;
+}
+.Rectangle_3_Class {
+	fill: rgba(235,235,235,1);
+}
+.Rectangle_3 {
+	position: absolute;
+	overflow: visible;
+	width: 368px;
+	height: 60px;
+	left: 0px;
+	top: 0px;
+}
+.Ellipse_3_Class {
+	fill: rgba(107,225,127,1);
+}
+.Ellipse_3 {
+	position: absolute;
+	overflow: visible;
+	width: 35px;
+	height: 35px;
+	left: 316px;
+	top: 13px;
+}
+.motors_enabled_Class {
+	left: 14px;
+	top: 11px;
+	position: absolute;
+	overflow: visible;
+	width: 292px;
+	height: 37px;
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(112,112,112,1);
+}
+.Rectangle_4_Class {
+	fill: rgba(235,235,235,1);
+}
+.Rectangle_4 {
+	position: absolute;
+	overflow: visible;
+	width: 910px;
+	height: 200px;
+	left: 86px;
+	top: 231px;
+}
+.btt_10sec_Class {
+	position: absolute;
+	width: 200px;
+	height: 150px;
+	left: 119px;
+	top: 256px;
+	overflow: visible;
+}
+.Rectangle_5_s_Class {
+	fill: url(#Rectangle_5_s);
+}
+.Rectangle_5_s {
+	position: absolute;
+	overflow: visible;
+	width: 200px;
+	height: 150px;
+	left: 0px;
+	top: 0px;
+}
+.n_0_arcsec_Class {
+	left: 30px;
+	top: 38px;
+	position: absolute;
+	overflow: visible;
+	width: 142px;
+	height: 74px;
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(255,255,255,1);
+}
+.movement_resolution_Class {
+	left: 389px;
+	top: 171px;
+	position: absolute;
+	overflow: visible;
+	width: 302px;
+	height: 37px;
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(112,112,112,1);
+}
+.Line_1_Class {
+	opacity: 0.6;
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 3px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_1 {
+	overflow: visible;
+	position: absolute;
+	width: 222px;
+	height: 3px;
+	left: 141px;
+	top: 189.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Ellipse_6_Class {
+	fill: rgba(169,169,169,1);
+}
+.Ellipse_6 {
+	position: absolute;
+	overflow: visible;
+	width: 18px;
+	height: 18px;
+	left: 370px;
+	top: 181px;
+}
+.Line_1_x_Class {
+	opacity: 0.6;
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 3px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_1_x {
+	overflow: visible;
+	position: absolute;
+	width: 222px;
+	height: 3px;
+	left: 721px;
+	top: 189.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Ellipse_6_y_Class {
+	fill: rgba(169,169,169,1);
+}
+.Ellipse_6_y {
+	position: absolute;
+	overflow: visible;
+	width: 18px;
+	height: 18px;
+	left: 693px;
+	top: 181px;
+}
+.move_axis_Class {
+	left: 359px;
+	top: 1077px;
+	position: absolute;
+	overflow: visible;
+	width: 364px;
+	height: 37px;
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(112,112,112,1);
+}
+.Line_1__Class {
+	opacity: 0.6;
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 3px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_1_ {
+	overflow: visible;
+	position: absolute;
+	width: 219px;
+	height: 1px;
+	transform: matrix(1,0,0,1,239.9541,893.5553) rotate(45deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Ellipse_6__Class {
+	fill: rgba(169,169,169,1);
+}
+.Ellipse_6_ {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	overflow: visible;
+	transform: matrix(1,0,0,1,430.9637,975.7721) rotate(45deg);
+	transform-origin: center;
+}
+.Line_1_ba_Class {
+	opacity: 0.6;
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 3px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_1_ba {
+	overflow: visible;
+	position: absolute;
+	width: 219px;
+	height: 1px;
+	transform: matrix(1,0,0,1,624.8543,893.5553) rotate(135deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Ellipse_6_ba_Class {
+	fill: rgba(169,169,169,1);
+}
+.Ellipse_6_ba {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	overflow: visible;
+	transform: matrix(1,0,0,1,634.8446,975.7721) rotate(135deg);
+	transform-origin: center;
+}
+.Line_1_bb_Class {
+	opacity: 0.6;
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 3px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_1_bb {
+	overflow: visible;
+	position: absolute;
+	width: 219px;
+	height: 1px;
+	transform: matrix(1,0,0,1,239.9541,1270.0614) rotate(-45deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Ellipse_6_bb_Class {
+	fill: rgba(169,169,169,1);
+}
+.Ellipse_6_bb {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	overflow: visible;
+	transform: matrix(1,0,0,1,430.9638,1169.8446) rotate(-45deg);
+	transform-origin: center;
+}
+.Line_1_bc_Class {
+	opacity: 0.6;
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 3px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_1_bc {
+	overflow: visible;
+	position: absolute;
+	width: 219px;
+	height: 1px;
+	transform: matrix(1,0,0,1,624.8543,1270.0614) rotate(225deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Ellipse_6_bc_Class {
+	fill: rgba(169,169,169,1);
+}
+.Ellipse_6_bc {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	overflow: visible;
+	transform: matrix(1,0,0,1,634.8447,1169.8446) rotate(225deg);
+	transform-origin: center;
+}
+.btt_up_Class {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	left: 390px;
+	top: 624px;
+	overflow: visible;
+}
+.Ellipse_5_ba_Class {
+	fill: url(#Ellipse_5_ba);
+}
+.Ellipse_5_ba {
+	filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.31));
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	overflow: visible;
+	transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
+	transform-origin: center;
+}
+.Polygon_1_Class {
+	fill: rgba(255,255,255,1);
+}
+.Polygon_1 {
+	overflow: visible;
+	position: absolute;
+	width: 163px;
+	height: 133px;
+	transform: translate(0px, 0px) matrix(1,0,0,1,68,69) rotate(0deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.btt_1min_Class {
+	position: absolute;
+	width: 200px;
+	height: 150px;
+	left: 440px;
+	top: 256px;
+	overflow: visible;
+}
+.Rectangle_5_be_Class {
+	fill: url(#Rectangle_5_be);
+}
+.Rectangle_5_be {
+	position: absolute;
+	overflow: visible;
+	width: 200px;
+	height: 150px;
+	left: 0px;
+	top: 0px;
+}
+.n__arcmin_Class {
+	left: 30px;
+	top: 38px;
+	position: absolute;
+	overflow: visible;
+	width: 142px;
+	height: 74px;
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(255,255,255,1);
+}
+.btt_30min_Class {
+	position: absolute;
+	width: 200px;
+	height: 150px;
+	left: 761px;
+	top: 256px;
+	overflow: visible;
+}
+.Rectangle_5_bi_Class {
+	fill: url(#Rectangle_5_bi);
+}
+.Rectangle_5_bi {
+	position: absolute;
+	overflow: visible;
+	width: 200px;
+	height: 150px;
+	left: 0px;
+	top: 0px;
+}
+.n_0_arcmin_Class {
+	left: 30px;
+	top: 38px;
+	position: absolute;
+	overflow: visible;
+	width: 142px;
+	height: 74px;
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(255,255,255,1);
+}
+.btt_left_Class {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	left: 90px;
+	top: 946px;
+	overflow: visible;
+}
+.Ellipse_5_bm_Class {
+	fill: url(#Ellipse_5_bm);
+}
+.Ellipse_5_bm {
+	filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.31));
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	overflow: visible;
+	transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(90deg);
+	transform-origin: center;
+}
+.Polygon_1_bn_Class {
+	fill: rgba(255,255,255,1);
+}
+.Polygon_1_bn {
+	overflow: visible;
+	position: absolute;
+	width: 163px;
+	height: 133px;
+	transform: translate(0px, 0px) matrix(1,0,0,1,54,84) rotate(-90deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.btt_down_Class {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	left: 390px;
+	top: 1246px;
+	overflow: visible;
+}
+.Ellipse_5_bq_Class {
+	fill: url(#Ellipse_5_bq);
+}
+.Ellipse_5_bq {
+	filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.31));
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	overflow: visible;
+	transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(0deg);
+	transform-origin: center;
+}
+.Polygon_1_br_Class {
+	fill: rgba(255,255,255,1);
+}
+.Polygon_1_br {
+	overflow: visible;
+	position: absolute;
+	width: 163px;
+	height: 133px;
+	transform: translate(0px, 0px) matrix(1,0,0,1,69,98) rotate(180deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.btt_right_Class {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	left: 690px;
+	top: 946px;
+	overflow: visible;
+}
+.Ellipse_5_bu_Class {
+	fill: url(#Ellipse_5_bu);
+}
+.Ellipse_5_bu {
+	filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.31));
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	overflow: visible;
+	transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(270deg);
+	transform-origin: center;
+}
+.Polygon_1_bv_Class {
+	fill: rgba(255,255,255,1);
+}
+.Polygon_1_bv {
+	overflow: visible;
+	position: absolute;
+	width: 163px;
+	height: 133px;
+	transform: translate(0px, 0px) matrix(1,0,0,1,83,83) rotate(90deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+
+
+
+.led-red {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    background-color: #F00;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+    -webkit-animation: blinkRed 0.5s infinite;
+    -moz-animation: blinkRed 0.5s infinite;
+    -ms-animation: blinkRed 0.5s infinite;
+    -o-animation: blinkRed 0.5s infinite;
+    animation: blinkRed 0.5s infinite;
+}
+
+.led-green {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    background-color: #ABFF00;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+}
+
+
+@-webkit-keyframes blinkRed {
+    from {
+        fill: #F00;
+    }
+
+    50% {
+        fill: #A00;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;
+    }
+
+    to {
+        fill: #F00;
+    }
+}
+
+@-moz-keyframes blinkRed {
+    from {
+        fill: #F00;
+    }
+
+    50% {
+        fill: #A00;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;
+    }
+
+    to {
+        fill: #F00;
+    }
+}
+
+@-ms-keyframes blinkRed {
+    from {
+        fill: #F00;
+    }
+
+    50% {
+        fill: #A00;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;
+    }
+
+    to {
+        fill: #F00;
+    }
+}
+
+@-o-keyframes blinkRed {
+    from {
+        fill: #F00;
+    }
+
+    50% {
+        fill: #A00;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;
+    }
+
+    to {
+        fill: #F00;
+    }
+}
+
+@keyframes blinkRed {
+    from {
+        fill: #F00;
+    }
+
+    50% {
+        fill: #A00;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;
+    }
+
+    to {
+        fill: #F00;
+    }
+}

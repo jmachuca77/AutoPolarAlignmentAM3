@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polar Align System</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="style.css"/>
+<script id="applicationScript" type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+<div id="polar" class="polar_Class">
+	<svg data-type="Rectangle" data-name="Rectangle 8" class="Rectangle_8">
+		<rect class="Rectangle_8_Class" rx="0" ry="0" x="0" y="0" width="1080" height="89">
+		</rect>
+	</svg>
+	<svg data-type="Rectangle" data-name="Rectangle 1" class="Rectangle_1">
+		<rect class="Rectangle_1_Class" rx="0" ry="0" x="0" y="0" width="1080" height="1831">
+		</rect>
+	</svg>
+	<svg data-type="Rectangle" data-name="Rectangle 2" class="Rectangle_2">
+		<rect class="Rectangle_2_Class" rx="30" ry="30" x="0" y="0" width="983" height="1515.222">
+		</rect>
+	</svg>
+	<img style="position:absolute;width:70px;height:70px;left:49px;top:6px;overflow:visible;" data-type="Rectangle" data-name="Image 1" class="Image_1_Class" src="images/Image_1.png" srcset="images/Image_1.png 1x, images/Image_1@2x.png 2x">
+		
+	<div data-type="Text" data-name="AM3 polar alignament" class="AM3_polar_alignament_Class">
+		<span>AM3 polar alignament</span>
+	</div>
+	<div style="position:absolute;width:368px;height:60px;left:659px;top:11px;overflow:visible;" onclick="toggleMotors()" data-type="Symbol" data-name="motor_status" id="btt_motor" class="motor_status btt_motor_Class">
+		<svg data-type="Rectangle" data-name="Rectangle 3" class="Rectangle_3">
+			<rect class="Rectangle_3_Class" rx="30" ry="30" x="0" y="0" width="368" height="60">
+			</rect>
+		</svg>
+		<svg data-type="Ellipse" data-name="Ellipse 3" class="Ellipse_3">
+			<ellipse id="statusLed" class="Ellipse_3_Class led-red" rx="17.5" ry="17.5" cx="17.5" cy="17.5">
+			</ellipse>
+		</svg>
+		<div data-type="Text" data-name="motors enabled" class="motors_enabled_Class">
+			<span>motors enabled</span>
+		</div>
+	</div>
+	<svg data-type="Rectangle" data-name="Rectangle 4" class="Rectangle_4">
+		<rect class="Rectangle_4_Class" rx="100" ry="100" x="0" y="0" width="910" height="200">
+		</rect>
+	</svg>
+	<div style="position:absolute;width:200px;height:150px;left:119px;top:256px;overflow:visible;" onclick="set10arc()" data-type="Symbol" data-name="btt_10sec" id="btt_10sec" class="btt_10sec btt_10sec_Class">
+		<svg data-type="Rectangle" data-name="Rectangle 5" id="10arc"  class="Rectangle_5_s inactive">
+			<linearGradient id="Rectangle_5_s" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+				<stop offset="0" stop-color="#9061ef" stop-opacity="1"></stop>
+				<stop offset="0.2719" stop-color="#875cdc" stop-opacity="1"></stop>
+				<stop offset="0.774" stop-color="#724dbb" stop-opacity="1"></stop>
+				<stop offset="1" stop-color="#5d3e9c" stop-opacity="1"></stop>
+			</linearGradient>
+			<rect class="Rectangle_5_s_Class" rx="75" ry="75" x="0" y="0" width="200" height="150">
+			</rect>
+		</svg>
+		<div data-type="Text" data-name="10arcsec" class="n_0_arcsec_Class">
+			<span>10<br/>arcsec</span>
+		</div>
+	</div>
+	<div data-type="Text" data-name="movement resolution" class="movement_resolution_Class">
+		<span>movement resolution</span>
+	</div>
+	<svg data-type="Line" data-name="Line 1" class="Line_1" viewBox="0 0 219 3">
+		<path class="Line_1_Class" d="M 219 0 L 0 0">
+		</path>
+	</svg>
+	<svg data-type="Ellipse" data-name="Ellipse 6" class="Ellipse_6">
+		<ellipse class="Ellipse_6_Class" rx="9" ry="9" cx="9" cy="9">
+		</ellipse>
+	</svg>
+	<svg data-type="Line" data-name="Line 1" class="Line_1_x" viewBox="0 0 219 3">
+		<path class="Line_1_x_Class" d="M 0 0 L 219 0">
+		</path>
+	</svg>
+	<svg data-type="Ellipse" data-name="Ellipse 6" class="Ellipse_6_y">
+		<ellipse class="Ellipse_6_y_Class" rx="9" ry="9" cx="9" cy="9">
+		</ellipse>
+	</svg>
+	<div data-type="Text" data-name="move axis" class="move_axis_Class">
+		<span>move axis</span>
+	</div>
+	<svg data-type="Line" data-name="Line 1" class="Line_1_" viewBox="0 0 219 3">
+		<path class="Line_1__Class" d="M 219 0 L 0 0">
+		</path>
+	</svg>
+	<svg data-type="Ellipse" data-name="Ellipse 6" class="Ellipse_6_">
+		<ellipse class="Ellipse_6__Class" rx="9" ry="9" cx="9" cy="9">
+		</ellipse>
+	</svg>
+	<svg data-type="Line" data-name="Line 1" class="Line_1_ba" viewBox="0 0 219 3">
+		<path class="Line_1_ba_Class" d="M 219 0 L 0 0">
+		</path>
+	</svg>
+	<svg data-type="Ellipse" data-name="Ellipse 6" class="Ellipse_6_ba">
+		<ellipse class="Ellipse_6_ba_Class" rx="9" ry="9" cx="9" cy="9">
+		</ellipse>
+	</svg>
+	<svg data-type="Line" data-name="Line 1" class="Line_1_bb" viewBox="0 0 219 3">
+		<path class="Line_1_bb_Class" d="M 219 0 L 0 0">
+		</path>
+	</svg>
+	<svg data-type="Ellipse" data-name="Ellipse 6" class="Ellipse_6_bb">
+		<ellipse class="Ellipse_6_bb_Class" rx="9" ry="9" cx="9" cy="9">
+		</ellipse>
+	</svg>
+	<svg data-type="Line" data-name="Line 1" class="Line_1_bc" viewBox="0 0 219 3">
+		<path class="Line_1_bc_Class" d="M 219 0 L 0 0">
+		</path>
+	</svg>
+	<svg data-type="Ellipse" data-name="Ellipse 6" class="Ellipse_6_bc">
+		<ellipse class="Ellipse_6_bc_Class" rx="9" ry="9" cx="9" cy="9">
+		</ellipse>
+	</svg>
+	<div style="position:absolute;width:300px;height:300px;left:390px;top:624px;overflow:visible;" onclick="goALTup()" data-type="Symbol" data-name="btt_up" id="btt_up" class="btt_up btt_up_Class">
+		<svg data-type="Ellipse" data-name="Ellipse 5" id="btn_up"  class="btn Ellipse_5_ba">
+			<linearGradient id="Ellipse_5_ba" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+				<stop offset="0" stop-color="#d44b4b" stop-opacity="1"></stop>
+				<stop offset="0.4854" stop-color="#f66869" stop-opacity="1"></stop>
+				<stop offset="1" stop-color="#f58888" stop-opacity="1"></stop>
+			</linearGradient>
+			<ellipse class="Ellipse_5_ba_Class" rx="150" ry="150" cx="150" cy="150">
+			</ellipse>
+		</svg>
+		<svg data-type="Polygon" data-name="Polygon 1" class="Polygon_1" viewBox="0 0 163 133">
+			<path class="Polygon_1_Class" d="M 67.00498962402344 23.65442085266113 C 73.63751220703125 12.83079147338867 89.36247253417969 12.83079051971436 95.99500274658203 23.6544189453125 L 147.1398010253906 107.1177291870117 C 154.0810699462891 118.445198059082 145.9298706054688 133 132.6448059082031 133 L 30.35519409179688 133 C 17.07013511657715 133 8.91892147064209 118.445198059082 15.86019039154053 107.1177291870117 Z">
+			</path>
+		</svg>
+	</div>
+	<div style="position:absolute;width:200px;height:150px;left:440px;top:256px;overflow:visible;" onclick="set1arc()" data-type="Symbol" data-name="btt_1min" id="btt_1min" class="btt_1min btt_1min_Class">
+		<svg data-type="Rectangle" data-name="Rectangle 5" id="1arc"   class="Rectangle_5_be inactive">
+			<linearGradient id="Rectangle_5_be" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+				<stop offset="0" stop-color="#9061ef" stop-opacity="1"></stop>
+				<stop offset="0.2719" stop-color="#875cdc" stop-opacity="1"></stop>
+				<stop offset="0.774" stop-color="#724dbb" stop-opacity="1"></stop>
+				<stop offset="1" stop-color="#5d3e9c" stop-opacity="1"></stop>
+			</linearGradient>
+			<rect class="Rectangle_5_be_Class" rx="75" ry="75" x="0" y="0" width="200" height="150">
+			</rect>
+		</svg>
+		<div data-type="Text" data-name="1arcmin" class="n__arcmin_Class">
+			<span>1<br/>arcmin</span>
+		</div>
+	</div>
+	<div style="position:absolute;width:200px;height:150px;left:761px;top:256px;overflow:visible;" onclick="set30arc()" data-type="Symbol" data-name="btt_30min" id="btt_30min" class="btt_30min btt_30min_Class">
+		<svg data-type="Rectangle" data-name="Rectangle 5" id="30arc"   class="Rectangle_5_bi inactive">
+			<linearGradient id="Rectangle_5_bi" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+				<stop offset="0" stop-color="#9061ef" stop-opacity="1"></stop>
+				<stop offset="0.2719" stop-color="#875cdc" stop-opacity="1"></stop>
+				<stop offset="0.774" stop-color="#724dbb" stop-opacity="1"></stop>
+				<stop offset="1" stop-color="#5d3e9c" stop-opacity="1"></stop>
+			</linearGradient>
+			<rect class="Rectangle_5_bi_Class" rx="75" ry="75" x="0" y="0" width="200" height="150">
+			</rect>
+		</svg>
+		<div data-type="Text" data-name="30arcmin" class="n_0_arcmin_Class">
+			<span>30<br/>arcmin</span>
+		</div>
+	</div>
+	<div style="position:absolute;width:300px;height:300px;left:90px;top:946px;overflow:visible;" onclick="goAZleft()" data-type="Symbol" data-name="btt_left" id="btt_left" class="btt_left btt_left_Class">
+		<svg data-type="Ellipse" data-name="Ellipse 5" id="btn_left"   class="btn Ellipse_5_bm">
+			<linearGradient id="Ellipse_5_bm" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+				<stop offset="0" stop-color="#ce3637" stop-opacity="1"></stop>
+				<stop offset="0.4854" stop-color="#f54e50" stop-opacity="1"></stop>
+				<stop offset="1" stop-color="#f07070" stop-opacity="1"></stop>
+			</linearGradient>
+			<ellipse class="Ellipse_5_bm_Class" rx="150" ry="150" cx="150" cy="150">
+			</ellipse>
+		</svg>
+		<svg data-type="Polygon" data-name="Polygon 1" class="Polygon_1_bn" viewBox="0 0 163 133">
+			<path class="Polygon_1_bn_Class" d="M 67.00498962402344 23.65442085266113 C 73.63751220703125 12.83079147338867 89.36247253417969 12.83079051971436 95.99500274658203 23.6544189453125 L 147.1398010253906 107.1177291870117 C 154.0810699462891 118.445198059082 145.9298706054688 133 132.6448059082031 133 L 30.35519409179688 133 C 17.07013511657715 133 8.91892147064209 118.445198059082 15.86019039154053 107.1177291870117 Z">
+			</path>
+		</svg>
+	</div>
+	<div style="position:absolute;width:300px;height:300px;left:390px;top:1246px;overflow:visible;" onclick="goALTdown()" data-type="Symbol" data-name="btt_down" id="btt_down" class="btt_down btt_down_Class">
+		<svg data-type="Ellipse" data-name="Ellipse 5" id="btn_down"  class="btn Ellipse_5_bq">
+			<linearGradient id="Ellipse_5_bq" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+				<stop offset="0" stop-color="#ce3637" stop-opacity="1"></stop>
+				<stop offset="0.4854" stop-color="#f54e50" stop-opacity="1"></stop>
+				<stop offset="1" stop-color="#f07070" stop-opacity="1"></stop>
+			</linearGradient>
+			<ellipse class="Ellipse_5_bq_Class" rx="150" ry="150" cx="150" cy="150">
+			</ellipse>
+		</svg>
+		<svg data-type="Polygon" data-name="Polygon 1" class="Polygon_1_br" viewBox="0 0 163 133">
+			<path class="Polygon_1_br_Class" d="M 67.00498962402344 23.65442085266113 C 73.63751220703125 12.83079147338867 89.36247253417969 12.83079051971436 95.99500274658203 23.6544189453125 L 147.1398010253906 107.1177291870117 C 154.0810699462891 118.445198059082 145.9298706054688 133 132.6448059082031 133 L 30.35519409179688 133 C 17.07013511657715 133 8.91892147064209 118.445198059082 15.86019039154053 107.1177291870117 Z">
+			</path>
+		</svg>
+	</div>
+	<div style="position:absolute;width:300px;height:300px;left:690px;top:946px;overflow:visible;" onclick="goAZright()" data-type="Symbol" data-name="btt_right" id="btt_right" class="btt_right btt_right_Class">
+		<svg data-type="Ellipse" data-name="Ellipse 5" id="btn_right"   class="btn Ellipse_5_bu">
+			<linearGradient id="Ellipse_5_bu" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+				<stop offset="0" stop-color="#ce3637" stop-opacity="1"></stop>
+				<stop offset="0.4854" stop-color="#f54e50" stop-opacity="1"></stop>
+				<stop offset="1" stop-color="#f07070" stop-opacity="1"></stop>
+			</linearGradient>
+			<ellipse class="Ellipse_5_bu_Class" rx="150" ry="150" cx="150" cy="150">
+			</ellipse>
+		</svg>
+		<svg data-type="Polygon" data-name="Polygon 1" class="Polygon_1_bv" viewBox="0 0 163 133">
+			<path class="Polygon_1_bv_Class" d="M 67.00498962402344 23.65442085266113 C 73.63751220703125 12.83079147338867 89.36247253417969 12.83079051971436 95.99500274658203 23.6544189453125 L 147.1398010253906 107.1177291870117 C 154.0810699462891 118.445198059082 145.9298706054688 133 132.6448059082031 133 L 30.35519409179688 133 C 17.07013511657715 133 8.91892147064209 118.445198059082 15.86019039154053 107.1177291870117 Z">
+			</path>
+		</svg>
+	</div>
+</div>
+<!-- Load script generated by Arduino at Setup -->
+    <script src="wsConnection.js"></script>
+    <script src="controller.js"></script>
+</body>
+</html>
